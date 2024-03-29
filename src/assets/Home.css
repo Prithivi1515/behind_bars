@@ -1,0 +1,46 @@
+/* Home content container */
+.home-content {
+  margin-left: 280px; /* Adjust based on the width of the navbar */
+  padding: 20px;
+}
+
+/* Hero section */
+.home-hero {
+  background-color: #61de70; /* Green background */
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Features section */
+.home-features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Feature card */
+.feature {
+  flex: 0 0 48%; /* Two columns with a small gap in between */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .home-features {
+      flex-direction: column;
+  }
+
+  .feature {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .home-content {
+      margin-left: 0;
+      padding: 20px;
+  }
+}
